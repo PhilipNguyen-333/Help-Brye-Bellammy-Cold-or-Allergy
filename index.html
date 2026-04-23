@@ -54,10 +54,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function changetext(){
 		var allergy_percent = allergy_count/(allergy_count + cold_count)*100;
 		var cold_percent = cold_count/(allergy_count + cold_count) *100; 
-		var intialtext = document.getElementary("results); 
-	initialText.innerHTML = " probability it is allergies +" + allergy_percent + "% <br> Probability it is a cold =" + cold_percent + "%"
-												}
-
+		var intialtext = document.getElementaryById("results); 
+	initialText.innerHTML = " probability it is allergies +" + allergy_percent + "% <br> Probability it is a cold =" + cold_percent + "%"					
+		}
   </script>
 
 
@@ -220,7 +219,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<p id-"results"> Press on the button belowe to see your results! </p>
 			<a onclick="changetext()" class = "w3-btn w3-grey w3-round"> Click here for results! </a>
 		</div>
-</div>
 	</footer>
 </body>
 </html>
