@@ -43,7 +43,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
         function allergyAdd(){
             allergy_count = allergy_count + 1;
-		alert("allergy_count is "+ allergy_count + "\ncold_count is" +  cold_count);
+		alert("allergy_count is "+ allergy_count + "\ncold_count is " +  cold_count);
 
         }
 
@@ -56,7 +56,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var allergy_percent = allergy_count/(allergy_count + cold_count)*100;
 		var cold_percent = cold_count/(allergy_count + cold_count) *100; 
 		var initialText = document.getElementById("results"); 
-	initialText.innerHTML = " probability it is allergies +" + allergy_percent + "% <br> Probability it is a cold =" + cold_percent + "%"					
+	initialText.innerHTML = " probability it is allergies = " + allergy_percent + "% <br> Probability it is a cold = " + cold_percent + "%"					
 		}
   </script>
 
@@ -105,122 +105,124 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<h1>Question 1</h1>
 	</div>
    
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
         	<p> do you like land animals or sea animals more?</p> 
-		<a href="#two" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Sea Animals </a>a> 
+		<a href="#two" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Sea Animals </a> 
 		<a href= "#two" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Land Animals </a>
     </div>
 </div>
-		<div class="page" id="two">
-	<div class="w3-container w3-flat-carrot">
+<div class="page" id="two">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	
 	</div>	
-<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		</p>Do you like cows or a manatee?</p>
-	<a href="#three" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Manatees </a>
-	<a href= "#three" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Cows </a>
+		<a href="#three" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Manatees </a>
+		<a href= "#three" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Cows </a>
 	</div> 
-	
-			<div class="page" id="three">
-	<div class="w3-container w3-flat-carrot">
+</div>	
+<div class="page" id="three">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p>Do you like cats or jellyfish better?</p>
 		<a href="#four" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Jellyfish </a>
-	<a href= "#four" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Cats </a>
+		<a href= "#four" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Cats </a>
 	</div> 
 	
 		
 </div>	
-	<div class="page" id="four">
-	<div class="w3-container w3-flat-carrot">
+<div class="page" id="four">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p> Do you like dogs or sharks better?</p></p>
 	<a href="#five" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Sharks </a>
 	<a href= "#five" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Dogs </a>
 	</div> 
-
-	<div class="page" id="five">
-	<div class="w3-container w3-flat-carrot">
+</div>
+<div class="page" id="five">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 5</h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p> Do you like eels or a snake?</p>
 		<a href="#six" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Eels </a>
 		<a href= "#six" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Snake </a>
-		</div> 
+	</div> 
 </div>	
-	<div class="page" id="six">
-	<div class="w3-container w3-flat-carrot">
+<div class="page" id="six">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 6</h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p> Do you like turles or bearded dragons? </p>
 		<a href="#seven" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> turtles </a>
 		<a href= "#seven" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> bearded dragon </a>
-	
+	</div>
 		
 </div>	
-	<div class="page" id="seven">
-	<div class="w3-container w3-flat-carrot">
+<div class="page" id="seven">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 7</h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p>  Do you like coral or cactus? </p>
 		<a href="#eight" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> coral </a>
 		<a href= "#eight" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> cactus </a>
 	</div> 
-
-		<div class="page" id="eight">
-	<div class="w3-container w3-flat-carrot">
+</div>
+<div class="page" id="eight">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 8 </h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p>Do you like clownfish or clowns better? </p>
 		<a href="#nine" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> clownfish </a>
 		<a href= "#nine" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> clowns </a>
-	
-		</div> 
-				<div class="page" id="nine">
-	<div class="w3-container w3-flat-carrot">
+	</div> 
+</div>
+<div class="page" id="nine">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 9 </h1>
 	</div>
-	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p> Do you like Seahorse or horse? </p>
 		<a href="#ten" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Seahorse </a>
-	<a href= "#ten" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Horse </a>
-	
-			<div class="page" id="ten">
-	<div class="w3-container w3-flat-carrot">
+		<a href= "#ten" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Horse </a>
+	</div>
+</div>
+<div class="page" id="ten">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 10 </h1>
 	</div>
 	
-	<div id="content" class="w3-container w3-flat-carrot">
+	<div id="content" class="w3-container">
 		<p>Do you like Manarays or eagles better?</p>
 		<a href="#eleven" onclick= "allergyAdd()" class="w3-btn w3-grey w3-round"> Mantaray </a>
 		<a href= "#eleven" onclick= "ColdAdd()" class= "w3-btn w3-grey w3-round"> Eagles </a>
 	</div>
-		
-				<div class="page" id="eleven">
-	<div class="w3-container w3-flat-carrot">
+</div>		
+<div class="page" id="eleven">
+	<div id="header" class="w3-container w3-flat-carrot">
 		<h1> Results </h1>
 	</div> 
-		<div id="content" class= "w3-container>
-			<p id="results"> Press on the button below to see your results! </p>
-			<a onclick="changetext()" class = "w3-btn w3-grey w3-round"> Click here for results! </a>
-		</div>
+	<div id="content" class= "w3-container">
+		<p id="results"> Press on the button below to see your results! </p>
+		<a onclick="changetext()" class = "w3-btn w3-grey w3-round"> Click here for results! </a>
+	</div>
+</div>
 	<footer class="w3-bottom w3-container w3-flat-carrot">
+		<p>DIY Apps!</p>
 	</footer>
 </body>
 </html>
